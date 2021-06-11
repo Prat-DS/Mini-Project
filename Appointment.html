@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head><title>Appointment</title></head>
+<link rel="stylesheet" href="Appointment.css">
+<body>
+    <div class="container">
+        <form>
+          <ul class="flex-outer">
+            <li>
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" placeholder="Enter your first name here">
+            </li>
+            <li>
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" placeholder="Enter your last name here">
+            </li>
+            <li>
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="Enter your email here">
+            </li>
+            <li>
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" placeholder="Enter your phone here">
+            </li>
+            <li>
+              <label for="message">Message</label>
+              <textarea rows="6" id="message" placeholder="Enter your message here"></textarea>
+            </li>
+            <li>
+              <p>Age</p>
+              <ul class="flex-inner">
+                <input list="Age" id="age" placeholder="Select age...">
+                <datalist id="Age">
+                    <option value="1-9">
+                    <option value="10-19">
+                    <option value="20-29">
+                    <option value="30-39">
+                    <option value="40-49">
+                    <option value="50-59">
+                    <option value="Above 60">
+                </datalist>
+                </ul>
+            </li>
+            <li>
+                <p>Appointment Time</p>
+                <ul class="flex-inner">
+                    <input list="Time" id="time" placeholder="Select time...">
+                    <datalist id="Time">
+                        <option value="08:00 AM - 10:00 AM">
+                        <option value="10:00 AM - 12:00 PM">
+                        <option value="12:00 PM - 01:00 PM">
+                        <option value="01:30 PM - 02:30 PM">
+                        <option value="02:30 PM - 04:30 PM">
+                        <option value="04:30 PM - 06:30 PM">
+                        <option value="06:30 PM - 08:30 PM">
+                        <option value="08:30 PM - 10:30 PM">
+                    </datalist>
+                    </ul>
+            </li>
+            <li>
+              <button type="submit">Submit</button>
+            </li>
+          </ul>
+        </form>
+      </div>
+</body>
+</html>
