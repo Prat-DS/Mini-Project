@@ -9,7 +9,8 @@
     </head>
     <body>
         <ul1>
-        <em><b>Digital Medishop</b></em></ul1>
+        <img src="https://github.com/Prat-DS/Mini-Project/blob/main/output-onlinepngtools.png?raw=true" style="height: 70px;">
+        </ul1>
         <br>
         <br>
         <nav>
@@ -22,9 +23,9 @@
         <br>
         <ul2>
         <li><div class="container-box">
-            <button class="item-list block"> Nagpur</button>
-            <button class="item-list block"> Mauda </button>
-            <button class="item-list block"> Umred </button>
+            <button ONCLICK="ShowAndHide1()" class="item-list block"> Nagpur</button>
+            <button ONCLICK="ShowAndHide2()" class="item-list block"> Mauda </button>
+            <button ONCLICK="ShowAndHide3()" class="item-list block"> Umred </button>
         </div></li>
         <li class="right"><div class="box-column">
             <h3><b>Opening Hours</b></h3>
@@ -35,9 +36,9 @@
             </ul>
         </div></li>
         </ul2>
-        <section class="Industry">
-            <div class="row">
+        <section id="Group1" class="Industry" style="display: none;">
             <div class="Industry-col">
+
                 <ul3>
                     <li class="centre" style="font-size: 18px;"><b>A R Enterprises, Nagpur</b></li><br><br>
                     <li class="centre">Pharmacy Address:
@@ -64,6 +65,52 @@
                </div>
             </div>
         </section>
+        <section id="Group3" class="Industry" style="display:none;">
+            <div class="row Industry-col">
+                <ul3>
+                    <li class="centre" style="font-size: 18px;"><b>Chandra Medicals, Umred</b></li><br><br>
+                    <li class="centre">Pharmacy Address:
+                        Chandra Medical Store, Umred Main Road , Mangalwari Peth , Umred - 441203</li><br>
+                    <li class="centre">Phone:
+                        (7116) 242087, 9604667808 , 9822644535</li><br>
+                        
+                    <li class="centre">Accepted Payment Forms:
+                        Cash</li>
+                </ul3>
+                <button><a href="Appointment.html" target="_blank">Make an appointment</a></button>
+               </div>
+            </div>
+        </section>
     </div>
     </body>
+    <SCRIPT>
+        function ShowAndHide1() {
+            var x = document.getElementById('Group1');
+            if (x.style.display == 'none') {
+                x.style.display = 'block';
+            } else {
+                x.style.display = 'none';
+            }
+        }
+    </SCRIPT>
+    <script>
+        function ShowAndHide2() {
+            var x = document.getElementById('Group2');
+            if (x.style.display == 'none') {
+                x.style.display = 'block';
+            } else {
+                x.style.display = 'none';
+            }
+        }
+    </script>
+    <script>
+        function ShowAndHide3() {
+            var x = document.getElementById('Group3');
+            if (x.style.display == 'none') {
+                x.style.display = 'block';
+            } else {
+                x.style.display = 'none';
+            }
+        }
+    </script>
 </html>
