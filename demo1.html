@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DIGITAL MEDISHOP </title>
+    <link rel="stylesheet" href="demo1.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <a href="demo1.html"><img src="https://i.pinimg.com/originals/4f/60/30/4f60305f48b01e05db6b53083abf71dd.png" height="60px" width="40px">
+        <em><b>DIGITAL MEDISHOP</b></em></a>
+<nav> 
+    <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hidemenu()"></i>
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">HOSPITALS</a></li>
+            <li><a href="">MEDICINE</a></li>
+            <li><a href="">VITAMINS</a></li>
+            <li><a href="">CONTACT</a></li>
+            <li><a rel="html" target="_blank" href="UserData.html">Sign Up/Sign In</a></li>
+</ul>
+</div>
+<i class="fa fa-bars" onclick="showMenu()"></i>
+</nav>
+    <div class="text-box">
+        <h1 style="10vw">World's Biggest DIGITAL MEDISHOP</h1>
+        <p>Medicine man would apply herbs and say prayers for healing, or an ancient philosopher and physician <br> would apply bloodletting according to the theories of humorism.</p>
+        <p><a href="#Global"class="hero-btn">Visit Us To Know More</a></p>
+        </div>
+        
+    </section>
+    <section class="Industry">
+        <h1>Industry Information</h1>
+        <p>See trends, challenges and opportunities with similar companies in these industries.</p>
+        <div class="row">
+        <div class="Industry-col">
+            <h3>Drug wholesales</h3>
+            <p>Companies in this industry serve as wholesale distributors of prescription drugs, over-the-counter medicines, and related products. Major companies include AmerisourceBergen, Cardinal Health, and McKesson (all based in the US), as well as Jointown Pharmaceutical (China), Medipal (Japan) and PHOENIX (Germany).</p>
+           </div>
+           <div class="Industry-col">
+            <h3>MEDICAL EQUIPMENT & SUPPLY WHOLESALERS</h3>
+            <p>Companies in this industry distribute professional medical equipment, instruments, and supplies to physicians, hospitals, and extended care facilities. Major companies include Henry Schein, McKesson Medical-Surgical, Owens & Minor, and Patterson Companies (all based in the US), along with OneMed (Sweden), Yamashita Medical Instruments (Japan), and EBOS Group (Australia).
+            </p>
+           </div><div class="Industry-col">
+            <h3>GRAIN & FIELD BEAN WHOLESALERS</h3>
+            <p>Companies in this industry distribute grains, such as corn, wheat, and oats, and unpolished rice; dry beans; and soybeans and other inedible beans. Major companies include Archer-Daniels-Midland, Bunge, Cargill, and farmer-owned cooperative CHS (all headquartered in the US), along with Louis Dreyfus (the Netherlands).</p>
+           </div>
+        </div>
+    </section>
+    <section class="hospitals" >
+        <h1 id="Global">Our Global Hospitals</h1>
+        <p>Global Hospitals Group was started in Hyderabad, Telangana, India and now it has several specialty hospitals in Mumbai, Chennai and Bengaluru with Tertiary Care and Quaternary Care Centres.</p>
+        <div class="row">
+            <div class="hospitals-col">
+                <img src="E:\gblimg.jpg">
+            <div class="layer">
+                <h3>Chennai</h3>
+            </div>
+            </div>
+
+    </section>
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hidemenu(){
+        navLinks.style.right = "-200px";
+    }
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+</script>
+
+    </body>
+    </html>>
